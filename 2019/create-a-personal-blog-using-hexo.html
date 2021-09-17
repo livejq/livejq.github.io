@@ -1,0 +1,118 @@
+<!DOCTYPE html><html class="scrollbar"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>基于Hexo框架的个人博客搭建 | liveJQ</title><meta name="author" content="liveJQ"><meta name="keywords" content="Hexo,博客框架,个人博客,站点搭建"><meta name="description" content="基于Hexo框架的个人博客搭建"><meta name="baidu-site-verification" content="MN5KDkxxm6"><link rel="shortcut icon" href="/img/favicon.png"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css" type="text/css"><link rel="stylesheet" href="/css/style.css"><!-- Custom --><script>document.onkeydown = function (e) {
+      var keyCode = e.keyCode || e.which || e.charCode;
+      if (keyCode == 123) {
+        e.returnValue = false;
+      }
+    }
+    document.oncontextmenu = function () {
+      return false;
+    }</script><link rel="stylesheet" href="/css/prism-dark.css" type="text/css"><link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><!-- Preloader --><div id="preloader"><div class="pre-container"><div class="transition"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div></div><!-- header --><header class="fixbackground" data-img-mode="normal" data-normal-src="/img/0.svg" data-random-max="11" data-random-src="/img/Random-img/"><div class="mask"><div class="h-header"><div id="logo-S"><a href="/"><img src="/img/logo.png" alt="Logo"></a></div><!-- Navigation in header(id="navigation-S") --><div id="navigation-S"><ul><li class="menu-home"><a href="/" class="menu-item-home">主页</a></li><li class="menu-archive"><a href="/archives/" class="menu-item-archive">归档</a></li><li class="menu-about"><a href="/about/" class="menu-item-about">关于</a></li><li class="menu-friends"><a href="/friends/" class="menu-item-friends">友链</a></li><li class="menu-gallery"><a href="/gallery/" class="menu-item-gallery">相册</a></li><li class="menu-search"><a href="javascript:;" class="popup-trigger" title="Search">搜索</a></li></ul></div></div><div class="h-body"><!-- motto --><div id="page-motto"><p class="motto"></p></div><div id="navigation-H"><!-- Page title --><p>当前文章&nbsp;:&nbsp;《基于Hexo框架的个人博客搭建》</p><!-- Progress bar --><div id="progress-bar"></div><!-- Progress percent --><div id="progress-percentage"><h1>0.0%</h1></div></div></div><div class="h-footer"><a href="javascript:;" id="read-more" class="arrow"></a></div></div></header><!-- Navigation in div(id="navigation-H") --> <a class="nav-trigger"><span></span></a><nav class="nav-container" id="cd-nav"><div class="nav-header"><h3>Navigation</h3><a href="javascript:;" class="nav-close"></a></div><div class="nav-body"><ul><li class="menu-home"><a href="/" class="menu-item-home">主页</a></li><li class="menu-archive"><a href="/archives/" class="menu-item-archive">归档</a></li><li class="menu-about"><a href="/about/" class="menu-item-about">关于</a></li><li class="menu-friends"><a href="/friends/" class="menu-item-friends">友链</a></li><li class="menu-gallery"><a href="/gallery/" class="menu-item-gallery">相册</a></li><li class="menu-search"><a href="javascript:;" class="popup-trigger" title="Search">搜索</a></li></ul></div><div class="nav-footer"><ul><li><a href="https://github.com/livejq" target="_blank"><i class="fab fa-github"></i></a></li><li><a href="mailto:cloud@livejq.fun" target="_blank"><i class="far fa-envelope"></i></a></li><li><a href="https://t.me/livejq" target="_blank"><i class="fab fa-telegram"></i></a></li><li><a href="https://www.livejq.top/atom.xml" target="_blank"><i class="fas fa-rss"></i></a></li><li><a href="https://myssl.com/www.livejq.top?from=mysslid" target="_blank"><i class="fab fa-expeditedssl"></i></a></li></ul></div></nav><!--main--><main><div class="layout-post"><div class="article-title"><a href="/2019/create-a-personal-blog-using-hexo.html" itemprop="url" target="_blank">基于Hexo框架的个人博客搭建</a></div><div class="article-meta"><span>发布于 <a href="/2019/create-a-personal-blog-using-hexo.html" itemprop="url"><time datetime="2019-01-22T06:45:19.000Z" itemprop="datePublished">2019-01-22 </time></a>/ 更新于 <a href="/2019/create-a-personal-blog-using-hexo.html" itemprop="url"><time datetime="2019-01-22T06:45:19.000Z" itemprop="dateUpdated">2020-10-22 </time></a></span>/ <span><i class="fas fa-tags"></i> <a href="javascript:void(0)">blog </a></span>/<!-- leancloud --> <span id="/2019/create-a-personal-blog-using-hexo.html" class="leancloud_visitors" data-flag-title="基于Hexo框架的个人博客搭建"><i class="fab fa-hotjar" aria-hidden="true"></i> <i class="leancloud-visitors-count" aria-hidden="true"></i></span></div><div class="article-content" id="article-content"><h3 id="Github-Node-js-Hexo框架，搭建个人博客"><a href="#Github-Node-js-Hexo框架，搭建个人博客" class="headerlink" title="Github+Node.js+Hexo框架，搭建个人博客"></a>Github+Node.js+Hexo框架，搭建个人博客</h3><p>本人是参考了这篇 <a href="https://zhuanlan.zhihu.com/p/26625249/" rel="noopener" target="_blank">专栏</a> 一步一步完成搭建的基本工作的，基本上不用半天就可以搞定。其中遇到了一些意想不到的错误，但因有扎实的基础（自己之前写过好几个网站了，有用php的，也有用jsp的，也学过基于命令行的linux操作系统，对于命令有一定的了解）。在这里需要提一下的就是Hexo框架初始化完成之后该专栏省略了一步操作，导致通过localhost:4000访问时出现错误而无法访问（博主应该是漏写了：T），得右击blog目录（这是我的目录名，该目录为Hexo框架下的初始化了的主目录）进入Git Bash Here，然后通过命令npm install hexo-server –save安装服务器，然后通过命令hexo s开启本地服务才能访问。</p><h3 id="Annie主题的基本配置"><a href="#Annie主题的基本配置" class="headerlink" title="Annie主题的基本配置"></a>Annie主题的基本配置</h3><p>主题配置可以参考此<a href="https://sariay.github.io/2018/08/27/Annie%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" rel="noopener" target="_blank">文章</a>，写得十分详细精致，值得学习，在此就不再赘述了。</p><h3 id="准备文章的编辑工具"><a href="#准备文章的编辑工具" class="headerlink" title="准备文章的编辑工具"></a>准备文章的编辑工具</h3><p>当然，如果您喜欢 记事本、sublime 或 notepad++ 之类的编辑工具并且对markdown的语法较为熟悉的话，也可以不使用专门为Windows平台打造的markdown编辑工具 MarkdownPad 2，本人还是比较推荐使用的，毕竟是量身定做的，而且还有实时预览的功能。</p><h4 id="下载安装MarkdownPad-2"><a href="#下载安装MarkdownPad-2" class="headerlink" title="下载安装MarkdownPad 2"></a>下载安装MarkdownPad 2</h4><ul><li><p>官网下载地址：<a href="http://www.markdownpad.com/" target="_blank" rel="noopener">点击下载</a></p></li><li><p>安装后得升级到Pro才能获取该工具的全部功能，这里使用了这位 <a href="https://www.jianshu.com/p/a85e8b0545e2/" target="_blank" rel="noopener">大佬</a> 分享的 Markdownpad 2 的授权key,再次十分感谢！</p></li><li><p>新版本可能会因缺少实时预览的组件 <a href="http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe" target="_blank" rel="noopener">Awesomium</a> 而发生错误，若此则直接下载安装就行，否则会出现如下图所示的错误：<br><img src="/img/cut-pic/19-1-22/zViphhR.png" alt="HTML渲染组件出错.png"></p></li><li><p>所有操作完成后则可以写文章并实时预览了：<br><img src="/img/cut-pic/19-1-22/LGRAhTn.png" alt="MarkdownPad2预览效果图.png"></p></li><li><p>在此顺便提一下这里所用的图片已上传到<a href="https://i.imgur.com/" target="_blank" rel="noopener">https://i.imgur.com/</a> (目前国内被封，暂时不能访问)。imgur 提供免费图片空间，整体接口与操作方式相当简单，提供直接连结，可外部绑定图片。同时支持多种常见图片格式，例如 JPEG, GIF, PNG, TIFF, BMP, PDF, XFC (GIMP) ，不过必须注意的是 TIFF, BMP, PDF 和 XFC 档案在上传之后会被转为 PNG 格式。Imgur于2009年由俄亥俄大学一位大三学生Alan Schaaf创办，敬佩～。</p></li></ul></div><div class="livejq-personal"><div class="row text-center" style="padding: 50px 0;border-top: 1px dashed #E7E7E7;"><b><p style="font-size:16px;margin-bottom: 10px;text-align: center;" id="enjoyMsg"></p></b><button data-toggle="modal" data-target="#reward" class="btn btn-danger btn-lg" style="padding:4px 10px;font-weight:bold;">打赏</button></div><div class="modal fade" id="reward" tabindex="-1" role="dialog" aria-labelledby="rewardLabel" aria-hidden="true"><div class="modal-dialog" style="max-width:365px"><div class="modal-content"><div class="modal-body"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><ul id="payTabs" class="nav nav-tabs"><li class="active"><a href="#wechat_pay" data-toggle="tab">微信</a></li><li><a href="#alipay" data-toggle="tab">支付宝</a></li></ul><div id="payMethod" class="tab-content"><div class="tab-pane fade in active" id="wechat_pay"><img src="/img/cut-pic/wechat_pay.png" alt="wechat_pay" data-bd-imgshare-binded="1"></div><div class="tab-pane fade" id="alipay"><img src="/img/cut-pic/alipay.png" alt="alipay" data-bd-imgshare-binded="1"></div></div></div></div></div></div><script defer="defer" src="/js/popper.min.js"></script><script defer="defer" src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script defer="defer" src="/js/custom.js"></script><div class="social-share" data-image="https://www.livejq.top/img/livejqTop.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div><div id="current-post-cover" data-scr="/img/post-cover/1.jpg"></div><!-- relate post, comment...--><div class="investment-container"><!-- Ads auto_flower --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2863856337188342" data-ad-slot="3371715010" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script><div class="investment-header"><div class="investment-title-1"><div class="on">留言评论</div><div>推荐阅读</div></div><div class="investment-title-2"><span><a href="javascript: window.scrollTo(0, 0);">返回顶部</a> <a href="/2019/optimize-hexo-blog.html" title="Hexo博客的优化问题" rel="prev">&laquo;上一篇</a></span></div></div><div class="investment-content below-content"><div class="investment-content-list"><div class="layout-comment"><!-- comment gitalk --><!-- show gitalk comment --><div id="gitalk-container"></div><!-- gitalk`s css & js --><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><link rel="stylesheet" href="/css/comment.css"><script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script><script type="text/javascript">//Thanks O-R
+	//https://github.com/gitalk/gitalk/issues/102#issuecomment-382970552
+	//去除尾部匹配正则数组的字符串  
+	//Remove redundant characters
+	String.prototype.trimEnd = function (regStr) {
+		var result = this;
+		if (regStr == undefined || regStr == null || regStr == "") {
+			return result;
+		}
+		var array = regStr.split(',');
+
+		if (array.length > 0) {
+
+			var c = array.shift();
+			var str = this;
+			var i = str.length;
+			var rg = new RegExp(c);
+			var matchArr = str.match(rg);
+
+			if (matchArr != undefined && matchArr != null && matchArr.length > 0) {
+				var matchStr = matchArr[0].replace(/\\/g, "\\\\").replace(/\*/g, "\\*")
+					.replace(/\+/g, "\\+").replace(/\|/g, "\\|")
+					.replace(/\{/g, "\\{").replace(/\}/g, "\\}")
+					.replace(/\(/g, "\\(").replace(/\)/g, "\\)")
+					.replace(/\^/g, "\\^").replace(/\$/g, "\\$")
+					.replace(/\[/g, "\\[").replace(/\]/g, "\\]")
+					.replace(/\?/g, "\\?").replace(/\,/g, "\\,")
+					.replace(/\./g, "\\.").replace(/\&/g, "\\&");
+				matchStr = matchStr + '$';
+				result = str.replace(new RegExp(matchStr), "");
+			}
+
+			if (array.length > 0) {
+				return result.trimEnd(array.join())
+			} else {
+				return result;
+			}
+		}
+	};
+
+	//Create gitalk
+	var gitalk = new Gitalk({
+		clientID: 'eb98d993a6a7d3c934aa',
+		clientSecret: '2421ea27774da88b3b14422a95ee2557c435908c',
+		//id: window.location.pathname,
+		//id: decodeURI(window.location.pathname),
+		//id: (window.location.pathname).split("/").pop().substring(0, 49),
+		id: decodeURI(md5(location.href.trimEnd('#.*$,\\?.*$,index.html$'))),
+		repo: 'blog-comment-repo',
+		owner: 'livejq',
+		admin: 'livejq',
+		distractionFreeMode: 'true',
+	})
+	gitalk.render('gitalk-container');</script></div></div><div class="investment-content-list"><div class="relate-post"><ul><li><div><a href="/2019/errors-when-hexo-g-generates-static-files.html" title="Hexo G命令生成静态文件时出现渲染错误">Hexo G命令生成静态文件时出现渲染错误</a><p>遇到错误 报错信息如下： @lenovo ➜ blog git:(master) ✗ hexo g INFO Start proc...</p></div><a href="/2019/errors-when-hexo-g-generates-static-files.html" title="Hexo G命令生成静态文件时出现渲染错误"><img src="/img/post-cover/54.jpg" class="relateImg" alt="Hexo G命令生成静态文件时出现渲染错误"></a></li><li><div><a href="/2019/optimize-hexo-blog.html" title="Hexo博客的优化问题">Hexo博客的优化问题</a><p>起因刚搭好博客后觉得还不错，很好，很精致。但久了之后就发现其中还存在的问题（访问加载速度太慢了），而这还是通过别人的提醒后才真正着手去...</p></div><a href="/2019/optimize-hexo-blog.html" title="Hexo博客的优化问题"><img src="/img/post-cover/21.jpg" class="relateImg" alt="Hexo博客的优化问题"></a></li></ul></div></div></div></div></div><!-- show math formula --><link rel="stylesheet" href="https://cdn.bootcss.com/lightgallery/1.6.4/css/lightgallery.css" type="text/css"><script src="https://cdn.bootcss.com/lightgallery/1.6.4/js/lightgallery-all.min.js"></script><script type="text/javascript">var postTitle = $('.article-title a').text() ? $('.article-title a').text() : "No post title!";
+	$('.article-content img').each(function () {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		$(this).wrap('<div class="img-responsive" data-src="' + imgPath + '" data-responsive="' + imgPath +
+			'" data-sub-html="<p>图片 ' + imgTitle + '</p><h4>文章' + postTitle + '</h4>"></div>');
+	});
+
+	$('.article-content').lightGallery({
+		mode: 'lg-slide',
+		selector: '.img-responsive',
+		share: false,
+		zoom: false,
+		download: false
+	});
+	//TODO：支持video</script><!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+--><div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div><script src="/plugin/toc/katelog.min.js"></script></main><!--footer--><footer><div class="social"><ul><li><a href="https://github.com/livejq" target="_blank"><i class="fab fa-github"></i></a></li><li><a href="mailto:cloud@livejq.fun" target="_blank"><i class="far fa-envelope"></i></a></li><li><a href="https://t.me/livejq" target="_blank"><i class="fab fa-telegram"></i></a></li><li><a href="https://www.livejq.top/atom.xml" target="_blank"><i class="fas fa-rss"></i></a></li><li><a href="https://myssl.com/www.livejq.top?from=mysslid" target="_blank"><i class="fab fa-expeditedssl"></i></a></li></ul></div><div class="copyright"><span>&copy;2018 - 2021</span><span class="with-love"><i class="fas fa-heart"></i></span><span><a href="https://www.livejq.top" rel="noopener nofollow" style="color: #DAA520">liveJQ</a></span> <span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-creative-commons"></i>BY-NC-SA.</a></span><script src="/js/stayComm.js" type="text/javascript"></script><p></p></div><canvas id="evanyou"></canvas><!-- Baidu auto push --><script>(function () {
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			} else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();</script><!-- Global site tag (gtag.js) - Google Analytics --><script src="https://www.googletagmanager.com/gtag/js?id=UA-144162513-1"></script><script>window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-144162513-1');</script></footer><!-- set '1' to show motto in all pages! --><script src="/js/motto.js"></script><script async>$(".motto").html(getMingYanContent());</script><!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)
+--><div class="popup search-popup local-search-popup"><div class="local-search-container"><span class="popup-btn-close">ESC</span><div class="local-search-header"><input autocomplete="off" placeholder="Search..." type="text" id="local-search-input"></div><div class="local-search-body"><div id="local-search-output"></div></div></div></div><script src="/js/ziploader.js"></script><script src="/js/search.js"></script><script>var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '3';
+
+	themeLocalSearch({
+		search_path,
+		zip_Path,
+		version_Path,
+		input_Trigger,
+		top_N
+	});</script><script src="/js/love.js"></script><!--back to top--><div id="totop"><a href="javascript:;" name="TOTOP" class="fa fa-arrow-up"></a></div><script src="/js/chinese.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/gh/emn178/js-sha1/build/sha1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script src="/plugin/clipboard/codecopy.js"></script><script async type="text/javascript" src="/js/evanyou.js"></script></body></html>

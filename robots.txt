@@ -1,0 +1,23 @@
+# Group 1
+# User-agent: Googlebot
+# Disallow: /nogooglebot/
+
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /2018/
+Allow: /2019/
+Allow: /2020/
+Allow: /archives/
+Allow: /about/
+Allow: /friends/
+Allow: /gallery/
+Allow: /img/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /media/
+Disallow: /plugin/
+
+Sitemap: https://www.livejq.top/sitemap.xml
+Sitemap: https://www.livejq.top/baidusitemap.xml

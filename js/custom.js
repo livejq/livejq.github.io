@@ -1,0 +1,1 @@
+var msgPayArray=["是时候该喝杯茶，起身转悠转悠吧！","今天又是元气满满的一天！","有你在真好！"];function randomNum(r,a){switch(arguments.length){case 1:return parseInt(Math.random()*r+1,10);case 2:return parseInt(Math.random()*(a-r+1)+r,10);default:return 0}}var resultPayMsg=document.getElementById("enjoyMsg");resultPayMsg.innerText=msgPayArray[randomNum(0,msgPayArray.length-1)];
